@@ -1,0 +1,229 @@
+/* .loginform0{
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.loginform1 {
+  margin-top: 25px;
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+ 
+  text-transform: capitalize;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  width: 96%;
+  padding: 10px;
+  background: #ff6600;
+  background-color: #084177;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #f57c0a;
+   background-color: rgb(28, 103, 173);
+}
+
+.message {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+.para1,.para2{
+     text-align: center;
+  font-size: 14px;
+  color: red;  
+
+}
+.signuppara{
+        text-align: center;
+}
+.linkspan{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
+
+
+
+/* Main container for login page */
+.loginform0 {
+ height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1rem;
+  margin-top: 65px;
+}
+
+/* Inner login box */
+.loginform1 {
+  
+ height: 450px;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+}
+.loginform1 h1{
+  color: #071a55;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.loginform0 form{
+  background-color: #071a55;
+  height: 290px;
+  margin-top: -29px;
+}
+/* Labels */
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #0a67e9;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f7ca03;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+/* Error messages */
+.para1,
+.para2 {
+  color: #fc0202;
+  font-size: 0.875rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Signup text */
+.loginform0 p {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #f7ca03;
+}
+
+.linkspan {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.linkspan:hover {
+  text-decoration: underline;
+}
+
+/* Server message */
+.message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #16a34a; /* Green for success or default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginform1 {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .input {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .signuppara {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginform1 {
+    padding: 1rem;
+  }
+
+  .label {
+    font-size: 0.95rem;
+  }
+
+  .input {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+
+  .signuppara {
+    font-size: 0.8rem;
+  }
+}

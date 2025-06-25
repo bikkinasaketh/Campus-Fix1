@@ -1,0 +1,292 @@
+/* Global body style (move to global CSS if applicable) */
+body {
+  background-color:rgb(220, 220, 220);
+}
+
+/* Navbar base styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#084177; /* Dark navy blue */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin: 0;
+}
+
+.scrolled {
+  background-color: #084177; /* Slightly darker shade when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for navbar content */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  color: #fffdfb;
+  text-decoration: none;
+}
+
+.logo h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fffdfb;
+}
+
+.logo img {
+  height: 20px;
+  width: auto;
+}
+
+/* Desktop menu styles */
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navLink {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #f6f6f7;
+  color: #084177;
+  font-weight: 700;
+}
+
+/* Login icon styles */
+.loginIcon {
+  display: flex;
+  align-items: center;
+}
+
+.loginIcon svg {
+  fill: white;
+  stroke: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.loginIcon:hover svg {
+  transform: scale(1.1);
+}
+
+/* Mobile toggle button (hamburger icon) */
+.mobileToggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 390px; /* Explicitly push to the right */
+  order: 2; /* Ensure it comes after other flex items */
+}
+
+.mobileToggle:hover{
+  background-color:#084177;
+}
+/* Icon styles for both hamburger and login icons */
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: white;
+  fill: none;
+}
+.loginButton{
+  padding: 8px 10px ;
+  background-color: #f6f6f7;
+  color: #131D4F;
+  border: none;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.loginButton:hover{
+  background-color: rgb(218, 196, 3);
+}
+/* Mobile menu styles */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: -80vw;
+  width: 80vw;
+  max-width: 250px;
+  height: 100vh;
+  background-color: #084177;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mobileMenu.active {
+  left: 0;
+}
+
+.mobileMenu .navLink,
+.mobileMenu .loginIcon {
+  padding: 0.75rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mobileMenu .navLink:hover,
+.mobileMenu .loginIcon:hover {
+  background-color: #f6f6f7;
+  color: #131D4F;
+}
+
+/* Overlay for mobile menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Responsive breakpoints */
+
+/* Small screens (<480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+    height: 3rem;
+  }
+
+  .logo h2 {
+    font-size: 0.8rem;
+    color: #fffdfb;
+  }
+
+  .logo img {
+    height: 18px;
+  }
+
+  .mobileToggle {
+    margin-left:275px; /* Ensure hamburger stays on the right */
+    padding: 0.4rem;
+  }
+
+  .mobileMenu {
+    width: 85vw;
+    max-width: 200px;
+    padding: 0.75rem;
+  }
+
+  .mobileMenu .navLink,
+  .mobileMenu .loginIcon {
+    font-size: 0.8rem;
+    padding: 0.6rem 0;
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* Tablet and medium screens (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+    height: 4rem;
+  }
+
+  .logo h2 {
+    font-size: 1.35rem;
+    color: #fffdfb;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .desktopMenu {
+    display: flex;
+  }
+
+  .navLink {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .mobileToggle {
+    display: none;
+    margin-left: 256px;
+  }
+   .mobileToggle:hover{
+    background-color: #f6f6f7;
+    color:#084177;
+   }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+/* Large screens (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 2rem;
+  }
+
+  .logo h2 {
+    font-size: 1.5rem;
+    color: #fffdfb;
+  }
+
+  .navLink {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

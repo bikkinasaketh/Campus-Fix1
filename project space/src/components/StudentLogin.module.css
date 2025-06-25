@@ -1,0 +1,132 @@
+
+.container0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: 65px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+   margin-top: 35px;
+  height: 350px;
+  /* background-color: #262B2F; */
+  padding: 5rem 3rem;
+  border-radius: 1.2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .container h2 {
+  text-align: center;
+  color: #071a55;
+  font-size: 1.8rem;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+  transition: 0.3s ease;
+}
+.container label{
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #0a67e9;
+}
+input:focus {
+  outline: none;
+  border-color:#152a63;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.errorField {
+  border-color: #ff0000 !important;
+}
+
+
+.errorMsg {
+  color: #f1f1f1;
+  background-color: #ff0000;
+  padding:12px 29px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+
+ .container button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #e0e40b;
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #152a63;
+}
+
+button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.container form{
+  background-color: #071a55;
+  height: 240px;
+  margin-top: -29px;
+}
+/* .signupText {
+  padding-top: -5px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6b7280;
+} */
+.container p{
+  font-size: 0.9rem;
+  text-align: center;
+  color: #f3bc06;
+
+}
+.signupLink a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

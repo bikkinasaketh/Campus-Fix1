@@ -1,0 +1,28 @@
+.admin-panel {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.complaints-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.complaint-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.complaint-card p {
+  margin: 6px 0;
+}
+
+select {
+  padding: 5px;
+  margin-top: 5px;
+}

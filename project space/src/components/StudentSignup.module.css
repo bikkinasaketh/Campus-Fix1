@@ -1,0 +1,162 @@
+.formSection {
+
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #084177;
+  font-size: 33px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.errorField {
+  border-color: #e74c3c !important;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #0077cc;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+placeholder:hover{
+  background-color: white;
+}
+.submitButton {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  background-color:#084177;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #005fa3;
+}
+
+.submitButton:disabled {
+  background-color: #aac8e3;
+  cursor: not-allowed;
+}
+
+.sending {
+  position: relative;
+  pointer-events: none;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loginText {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.loginLink {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .submitButton {
+    font-size: 15px;
+  }
+}

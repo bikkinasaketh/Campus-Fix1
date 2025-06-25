@@ -1,0 +1,118 @@
+.reviewsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #f5f7fa;
+    background-color:rgb(220, 220, 220);
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titleHighlight {
+  color:#084177;
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .reviewsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reviewCard {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--index));
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.reviewCard:hover {
+  background-color: #1e293b;
+  color: #fff;
+  border: none;
+}
+
+.reviewCard:hover .reviewText {
+  color: #d1d5db;
+}
+
+.reviewCard:hover .userName {
+  color: #fff;
+}
+
+.stars {
+  color: #fdbb05d8;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.star {
+  margin: 0 2px;
+}
+
+.reviewText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.userImage {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
