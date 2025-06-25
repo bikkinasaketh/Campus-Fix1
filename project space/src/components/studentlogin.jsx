@@ -216,7 +216,7 @@ const StudentLogin = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/students/login', {
+      const response = await axios.post('http://192.168.57.239/api/students/login', {
         studentID,
         password,
       });
