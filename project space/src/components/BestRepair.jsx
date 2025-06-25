@@ -1,7 +1,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "./Bestrepair.module.css";
+import styles from "./BestRepair.module.css";
 
 const Bestrepair = () => {
   return (
